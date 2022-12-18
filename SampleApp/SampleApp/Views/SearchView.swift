@@ -38,7 +38,6 @@ struct SearchView: View {
                         ResultView(itemViewModel:viewsModel).onAppear{
                             if(viewsModel.id ==  viewModel.lastIndexId  ){
                                 viewModel.loadMoreContent()
-                                print(viewModel.results.count)
                             }
                             
                         }
